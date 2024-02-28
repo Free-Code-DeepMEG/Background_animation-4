@@ -5,4 +5,23 @@
         <link rel="shortcut icon" href="new deepmeg logo-tranparent white.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <script>
+            function lines(){
+                let e = document.createElement('div');
+                e.setAttribute('class','circle');
+                document.body.appendChild(e);
+
+                setTimeout(function(){
+                    document.body.removeChild(e)
+                },5000);
+            }
+
+
+
+            setInterval(function(){
+                lines();
+            },1000);
+        </script>
+    </body>
 </html>
